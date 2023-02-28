@@ -18,7 +18,6 @@ default_config.prices = {
     ["5454"] = 600, --Mercanbaligi
 }
 
-local player = GetPlayerEntity()
 local fishmon_config = default_config
 local fish_caught = 0
 local started = false
@@ -68,6 +67,7 @@ ashita.register_event("incoming_packet", function(id, size, data)
         end
     end
     if id == 39 then -- Packet 39 contains the actual fish ID. It is only sent after the fish is caught
+        local player = GetPlayerEntity()
         target = struct.unpack("H", data, 5)
         if player.ServerId == target then
             if (started == false) and (fish_caught == 0) then
