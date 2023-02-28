@@ -70,13 +70,13 @@ ashita.register_event("incoming_packet", function(id, size, data)
         local player = GetPlayerEntity()
         target = struct.unpack("H", data, 5)
         if player.ServerId == target then
-            if (started == false) and (fish_caught == 0) then
-                start_time = os.time(os.date("!*t"))
-                started = true
-            end
             id = tostring(struct.unpack("H", data, 17))
             for key, v in pairs(fishmon_config.prices) do
                 if string.contains(id, key) then
+                    if (started == false) and (fish_caught == 0) then
+                        start_time = os.time(os.date("!*t"))
+                        started = true
+                    end
                     fish_caught = fish_caught + 1
                     profit = profit + v
                 end
