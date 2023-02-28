@@ -46,4 +46,19 @@ If a fish does not have a price set in the settings it will not count towards th
 Note: the items in the list don't need to be fish. Any non-fish item acquired from fishing will work (like mythril swords and silver rings.)
 
 ## Other Settings
+
 Right now the only other settings are `show_debug` and `show_gui`. The debug setting allows you to toggle whether you see info about arrows, health, and damage. The GUI setting allows you to either enable or disable the GUI. Both are enabled by default.
+
+## Gallery
+
+![uifishmon](https://user-images.githubusercontent.com/39352103/221742419-e395e132-2ab7-40b7-8ac6-6feb2f31abd8.png)
+
+UI showing profit and total caught
+
+![smallfishexample](https://user-images.githubusercontent.com/39352103/221742521-0aa81ebf-6189-48d2-81dd-7d1d7618acd4.png)
+
+Chat message showing a small fish being hooked. Debug is enabled.
+
+![itemexample](https://user-images.githubusercontent.com/39352103/221742585-9934b18c-03fa-47b1-809d-ab0841ff5e5e.png)
+
+Chat message showing an item being hooked.
