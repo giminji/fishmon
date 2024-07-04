@@ -9,9 +9,9 @@ Ashita addon for fishing in FFXI
 
 ## Setup
 
-In your Ashita addons folder, create a new folder called `fishmon` and put the latest `fishmon.lua` file into it.
+In your Ashita addons folder, create a new folder called `fishmon` and put the latest `fishmon.lua` and 'settings.lua' file into it.
 
-The first time you load the addon, a new folder called `settings` will be created in the `fishmon` folder. It will have a file called `settings.json` in it that looks something like this:
+
 
 ```
 {
@@ -23,7 +23,7 @@ The first time you load the addon, a new folder called `settings` will be create
     "show_gui": true
 }
 ```
-The addon only comes with data for `Ahtapot` and `Mercanbaligi`. You will need to add more fish in.
+The addon only comes with data for `Ahtapot` and `Mercanbaligi`. You will need to add more fish in to the settings.lua file 
 
 To do this, go to the Eden website and look at the AH page for a certain fish. The URL will update to show the `ID` of the fish. Visiting the AH page for `Black Soles`, we can see it has an ID of `4384`: `https://edenxi.com/tools/item/4384`
 
