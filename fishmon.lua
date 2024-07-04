@@ -1,6 +1,6 @@
-_addon.author = "Floaty"
-_addon.name = "fishmon"
-_addon.version = "1.1.0"
+addon.author = "Floaty"
+addon.name = "fishmon"
+addon.version = "1.1.0"
 
 require("common")
 ----------------------------------------------------------------------------------------------------
