@@ -1,8 +1,11 @@
-addon.author = "Floaty"
-addon.name = "fishmon"
-addon.version = "1.1.0"
+addon.name = "fishmon";
+addon.author = "Floaty";
+addon.version = "1.1.0";
+addon.desc = 'Updated fishmon for tracking gil/hr';
+addon.link = 'https:ashitaxi.com/';
 
-require("common")
+require("common");
+local chat = require('chat');
 ----------------------------------------------------------------------------------------------------
 -- Default config
 -- A file will be generated at settings/settings.json in the addon folder
