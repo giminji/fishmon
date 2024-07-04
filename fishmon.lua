@@ -13,9 +13,12 @@ local default_config = {
     show_gui = true,
     show_debug = true,
 }
+
+-- below is vendor prices/AH pricing
 default_config.prices = {
     ["5455"] = 700, --Ahtapot
     ["5454"] = 600, --Mercanbaligi
+    ["4290"] = 458 --AH price per
 }
 
 local fishmon_config = default_config
@@ -33,15 +36,14 @@ fishing.messages = {
         "\31\130=========================>>> \31\39Monster"
     ),
 }
-----------------------------------------------------------------------------------------------------
 -- Load config
-----------------------------------------------------------------------------------------------------
+
 ashita.register_event("load", function()
-    if not ashita.file.file_exists(_addon.path .. "/settings/settings.json") then
-        ashita.settings.save(_addon.path .. "/settings/settings.json", fishmon_config)
+    if not ashita.file.file_exists(addon.path .. "/settings/settings.json") then
+        ashita.settings.save(addon.path .. "/settings/settings.json", fishmon_config)
     end
 
-    fishmon_config = ashita.settings.load_merged(_addon.path .. "/settings/settings.json", fishmon_config)
+    fishmon_config = ashita.settings.load_merged(addon.path .. "/settings/settings.json", fishmon_config)
 end)
 ----------------------------------------------------------------------------------------------------
 -- Parse packets for fish and result data
